@@ -1,24 +1,664 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>KCPA</class>
- <widget class="QMainWindow" name="KCPA" >
-  <property name="geometry" >
+ <widget class="QMainWindow" name="KCPA">
+  <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>460</width>
+    <height>520</height>
    </rect>
   </property>
-  <property name="windowTitle" >
-   <string>KCPA</string>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
   </property>
-  <widget class="QMenuBar" name="menuBar" />
-  <widget class="QToolBar" name="mainToolBar" />
-  <widget class="QWidget" name="centralWidget" />
-  <widget class="QStatusBar" name="statusBar" />
+  <property name="minimumSize">
+   <size>
+    <width>460</width>
+    <height>520</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>460</width>
+    <height>520</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>КЦПА</string>
+  </property>
+  <property name="locale">
+   <locale language="Russian" country="Ukraine"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>800</width>
+     <height>800</height>
+    </size>
+   </property>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>461</width>
+      <height>512</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetNoConstraint</enum>
+     </property>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="sizeConstraint">
+        <enum>QLayout::SetMaximumSize</enum>
+       </property>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>ПК4Б</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="pk4b_v1o">
+           <property name="text">
+            <string>V1-O</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="pk4b_v2o">
+           <property name="text">
+            <string>V2-O</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="pk4b_v3o">
+           <property name="text">
+            <string>V3-O</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="pk4b_v4o">
+           <property name="text">
+            <string>V4-O</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>ПК4Р I</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="pk4r1_v1o">
+           <property name="text">
+            <string>V1-O</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="pk4r1_v2o">
+           <property name="text">
+            <string>V2-O</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="pk4r1_v3o">
+           <property name="text">
+            <string>V3-O</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="pk4r1_v4o">
+           <property name="text">
+            <string>V4-O</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>ПК4Р II</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="pk4r2_v1o">
+           <property name="text">
+            <string>V1-O</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="pk4r2_v2o">
+           <property name="text">
+            <string>V2-O</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="pk4r2_v3o">
+           <property name="text">
+            <string>V3-O</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="pk4r2_v4o">
+           <property name="text">
+            <string>V4-O</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <item>
+          <widget class="QCheckBox" name="pk1i1">
+           <property name="text">
+            <string>ПК1И I</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="pk1i2">
+           <property name="text">
+            <string>ПК1И II</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_7">
+         <item>
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>1-4S2M</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_8">
+           <item>
+            <widget class="QGroupBox" name="s4m21_dir">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="title">
+              <string>Направление</string>
+             </property>
+             <widget class="QRadioButton" name="s4m21_cw">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>10</y>
+                <width>193</width>
+                <height>18</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>По часовой стрелке</string>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+             </widget>
+             <widget class="QRadioButton" name="s4m21_ccw">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>30</y>
+                <width>193</width>
+                <height>18</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Против часовой стрелки</string>
+              </property>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QLabel" name="label_6">
+             <property name="text">
+              <string>Шаги</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="s4m21_steps">
+             <property name="text">
+              <string>0</string>
+             </property>
+             <property name="maxLength">
+              <number>3</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <widget class="QPushButton" name="s4m21_m1">
+             <property name="text">
+              <string>Двигатель 1</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="s4m21_m2">
+             <property name="text">
+              <string>Двигатель 2</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_12">
+         <item>
+          <widget class="QLabel" name="label_9">
+           <property name="text">
+            <string>2-4S2M</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_13">
+           <item>
+            <widget class="QGroupBox" name="s4m22_dir">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="title">
+              <string>Направление</string>
+             </property>
+             <widget class="QRadioButton" name="s4m22_cw">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>10</y>
+                <width>193</width>
+                <height>18</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>По часовой стрелке</string>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+             </widget>
+             <widget class="QRadioButton" name="s4m22_ccw">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>30</y>
+                <width>193</width>
+                <height>18</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Против часовой стрелки</string>
+              </property>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_8">
+           <item>
+            <widget class="QLabel" name="label_10">
+             <property name="text">
+              <string>Шаги</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="s4m22_steps">
+             <property name="text">
+              <string>0</string>
+             </property>
+             <property name="maxLength">
+              <number>3</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_9">
+           <item>
+            <widget class="QPushButton" name="s4m22_m1">
+             <property name="text">
+              <string>Двигатель 1</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="s4m22_m2">
+             <property name="text">
+              <string>Двигатель 2</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_6">
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>ПСИ8</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_11">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_14">
+           <item>
+            <widget class="QGroupBox" name="psi8_type">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>90</height>
+              </size>
+             </property>
+             <property name="title">
+              <string>Тип свечения</string>
+             </property>
+             <widget class="QRadioButton" name="psi8_0hz">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>20</y>
+                <width>195</width>
+                <height>18</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Непрерывное свечение</string>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+             </widget>
+             <widget class="QRadioButton" name="psi8_1hz">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>40</y>
+                <width>195</width>
+                <height>18</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Мигание 1Гц</string>
+              </property>
+             </widget>
+             <widget class="QRadioButton" name="psi8_2hz">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>60</y>
+                <width>195</width>
+                <height>18</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Мигание 2Гц</string>
+              </property>
+             </widget>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_9">
+           <item>
+            <widget class="QGroupBox" name="psi8_color">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>170</height>
+              </size>
+             </property>
+             <property name="title">
+              <string>Цвет</string>
+             </property>
+             <widget class="QRadioButton" name="psi8_off">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>20</y>
+                <width>194</width>
+                <height>18</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Выключить</string>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+             </widget>
+             <widget class="QRadioButton" name="psi8_green">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>40</y>
+                <width>194</width>
+                <height>18</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Зелёный</string>
+              </property>
+             </widget>
+             <widget class="QRadioButton" name="psi8_red">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>60</y>
+                <width>194</width>
+                <height>18</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Красный</string>
+              </property>
+             </widget>
+             <widget class="QRadioButton" name="psi8_yellow">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>80</y>
+                <width>194</width>
+                <height>18</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Желтый</string>
+              </property>
+             </widget>
+             <widget class="QRadioButton" name="psi8_greenred">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>100</y>
+                <width>194</width>
+                <height>18</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Перем. зел-кр</string>
+              </property>
+             </widget>
+             <widget class="QRadioButton" name="psi8_greenyellow">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>120</y>
+                <width>194</width>
+                <height>18</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Перем. зел-жел</string>
+              </property>
+             </widget>
+             <widget class="QRadioButton" name="psi8_redyellow">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>140</y>
+                <width>194</width>
+                <height>18</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Перем. кр-жел</string>
+              </property>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_10">
+         <item>
+          <widget class="QPushButton" name="psi8_vd1">
+           <property name="text">
+            <string>Д1</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="psi8_vd2">
+           <property name="text">
+            <string>Д2</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="psi8_vd3">
+           <property name="text">
+            <string>Д3</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="psi8_vd4">
+           <property name="text">
+            <string>Д4</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="psi8_vd5">
+           <property name="text">
+            <string>Д5</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
  </widget>
- <layoutDefault spacing="6" margin="11" />
- <pixmapfunction></pixmapfunction>
+ <layoutdefault spacing="6" margin="11"/>
  <resources/>
  <connections/>
 </ui>
