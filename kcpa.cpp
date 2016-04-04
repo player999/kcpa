@@ -294,6 +294,7 @@ void KCPA::motorButtonPressed()
     }
     steps = static_cast<uint16_t>(step_count);
     value |= steps;
+    std::cout<<"Step value "<<value<<std::endl;
     int retval = writeRegister(address, value);
     if (-1 == retval) ShowError("VSM not found");
     if (-3 == retval) ShowError("Unable to connect to VSM");
@@ -315,7 +316,7 @@ void KCPA::ledButtonPressed()
     } else if (led_name.compare("psi8_vd3") == 0) {
         address = 0x0002;
     } else if (led_name.compare("psi8_vd4") == 0) {
-        address = 0x0203;
+        address = 0x0003;
     } else if (led_name.compare("psi8_vd5") == 0) {
         address = 0x0004;
     } else {
